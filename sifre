@@ -1,0 +1,7 @@
+import random
+sifre_harfleri = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+sifre_uzunluğu = int(input("şifre uzunluğunuz ne kadar olsun"))
+yeni_sifre = ""
+for i in range (sifre_uzunluğu):
+    yeni_sifre+=random.choice(sifre_harfleri)
+print (yeni_sifre)
